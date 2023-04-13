@@ -9,7 +9,6 @@ const userRoute = require("./routes/userRoute");
 const komenRoute = require("./routes/komenRoute");
 
 app.use(express.json());
-// app.use(FileUpload());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use("/images", express.static("./images"));
